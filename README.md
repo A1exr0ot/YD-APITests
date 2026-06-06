@@ -65,8 +65,6 @@ Yandex-disk-Integration-test/
 │ └── java/ru/tests/yadisk/
 │ └── YDClient.java
 └── test/
-└── java/ru/tests/yadisk/
-└── YDAPITest.java
 
 ---
 		
