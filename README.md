@@ -26,7 +26,7 @@
 ## 📊 Отчётность (Allure)
 
 - Для визуализации результатов тестирования в проекте настроен **Allure Framework**.
-- После запуска `mvn clean test` выполните `mvn allure report` отчёт автоматически генерируется в директории `target/allure-results`. Для просмотра выполните: `mvn allure serve`
+- После запуска `mvn clean test` выполните 'mvn allure:report' отчёт автоматически генерируется в директории `target/allure-results`. Для просмотра выполните: `mvn allure:serve`.
 
 ---
 
@@ -47,13 +47,15 @@
    - cd yandex-disk-api-tests
 
 2. Получение OAuth-токена Яндекс.Диска:
-   - Перейдите на страницу разработчика OAuth.
+   - Перейдите на страницу разработчика OAuth https://oauth.yandex.ru/client/30c1619d79514e11973fd5b71f4ac908.
+   - В управление приложением -> Настройки запрашиваем права на доступ к диску.
    - Нажмите «Создать приложение».
-   - Укажите имя и выберите доступ к Яндекс.Диску (галочка Яндекс.Диск REST API).
-   - После создания нажмите «Показать токен» и скопируйте access_token.
+   - Открыть пустую вкладку и в адресной строке ввести url https://oauth.yandex.ru/authorize?response_type=token&client_id=30c1619d79514e11973fd5b71f4ac908.
+   - Откроется страница на которой будет отображен токен, его нужно скопировать и сохранить.
+   - Создать в ОС переменную окружения, Win+R, cmd, ввести команду setx YANDEX_DISK_TOKEN "ваш_токен".
 
 3. Настройка переменной окружения:
-   - Требование: переменная YANDEX_DISK_TOKEN должна быть доступна OS или заданна в IntelliJ IDEA (Run -> Debug Configuration).
+   - Требование: переменная YANDEX_DISK_TOKEN должна быть доступна в OС или заданна в IntelliJ IDEA (Run -> Debug Configuration).
    - Системная переменная ОС Windows(cmd): setx YANDEX_DISK_TOKEN "ваш_токен" (после этого перезапустите OS)
    - Linux/macOS(bash): export YANDEX_DISK_TOKEN="ваш_токен" (добавьте в ~/.bashrc или ~/.zshrc для постоянного использования)
 
