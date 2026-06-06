@@ -54,8 +54,6 @@ Maven – сборка и зависимости
 
 ## 📁 Структура проекта
 
-## Структура проекта
-
 Yandex-disk-Integration-test/
 ├── pom.xml
 ├── README.md
