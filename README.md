@@ -49,34 +49,34 @@
    - cd yandex-disk-api-tests
 
 2. Получение OAuth-токена Яндекс.Диска:
-  - Перейдите на страницу разработчика OAuth.
-  - Нажмите «Создать приложение».
-  - Укажите имя и выберите доступ к Яндекс.Диску (галочка Яндекс.Диск REST API).
-  - После создания нажмите «Показать токен» и скопируйте access_token.
+   - Перейдите на страницу разработчика OAuth.
+   - Нажмите «Создать приложение».
+   - Укажите имя и выберите доступ к Яндекс.Диску (галочка Яндекс.Диск REST API).
+   - После создания нажмите «Показать токен» и скопируйте access_token.
 
 3. Настройка переменной окружения:
-  - Требование: переменная YANDEX_DISK_TOKEN должна быть доступна OS или заданна в IntelliJ IDEA (Run -> Debug Configuration).
-  - Системная переменная ОС Windows(cmd): setx YANDEX_DISK_TOKEN "ваш_токен" (после этого перезапустите OS)
-  - Linux/macOS(bash): export YANDEX_DISK_TOKEN="ваш_токен" (добавьте в ~/.bashrc или ~/.zshrc для постоянного использования)
+   - Требование: переменная YANDEX_DISK_TOKEN должна быть доступна OS или заданна в IntelliJ IDEA (Run -> Debug Configuration).
+   - Системная переменная ОС Windows(cmd): setx YANDEX_DISK_TOKEN "ваш_токен" (после этого перезапустите OS)
+   - Linux/macOS(bash): export YANDEX_DISK_TOKEN="ваш_токен" (добавьте в ~/.bashrc или ~/.zshrc для постоянного использования)
 
 4. Настройка в IntelliJ IDEA:
-  - Откройте проект.
-  - Run → Edit Configurations.
-  - Выберите конфигурацию JUnit (или создайте новую).
-  - В поле Environment variables нажмите ... и добавьте: YANDEX_DISK_TOKEN=ваш_токен.
-  - Примените изменения.
+   - Откройте проект.
+   - Run → Edit Configurations.
+   - Выберите конфигурацию JUnit (или создайте новую).
+   - В поле Environment variables нажмите ... и добавьте: YANDEX_DISK_TOKEN=ваш_токен.
+   - Примените изменения.
 
 5. Проверка:
-  - echo %YANDEX_DISK_TOKEN%    # Windows (cmd)
-  - echo $YANDEX_DISK_TOKEN     # Linux/macOS (bash)
+   - echo %YANDEX_DISK_TOKEN%    # Windows (cmd)
+   - echo $YANDEX_DISK_TOKEN     # Linux/macOS (bash)
 
 6. Запуск тестов:
-  - Через Maven (терминал): mvn clean test
-  - Через IDEA: Нажмите зелёную кнопку рядом с классом YandexDiskApiTest или используйте Ctrl+Shift+F10.
+   - Через Maven (терминал): mvn clean test
+   - Через IDEA: Нажмите зелёную кнопку рядом с классом YandexDiskApiTest или используйте Ctrl+Shift+F10.
 
 7. Пример успешного вывода:
-  - [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
-  - [INFO] BUILD SUCCESS
+   - [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+   - [INFO] BUILD SUCCESS
 
 ---
 
