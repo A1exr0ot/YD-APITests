@@ -22,19 +22,12 @@ Token: y0__wgBEOHP4PEIGN2WQyD1l93pFzDkz-DxCJZi5p77OK6P5uTbGiuPUBCR51_g
 
 Проект покрывает четыре основных HTTP-метода:
 
-Yandex-disk-Integration-test/
-├── pom.xml
-├── README.md
-├── images/
-│ ├── allure-overview.png
-│ └── token-idea-config.png
-└── src/
-├── main/
-│ └── java/ru/tests/yadisk/
-│ └── YDClient.java
-└── test/
-└── java/ru/tests/yadisk/
-└── YDAPITest.java
+| Метод | Эндпоинт | Описание | Тест |
+|-------|----------|----------|------|
+| **PUT** | `/resources` | Создание новой папки | `testCreateFolder()` |
+| **GET** | `/resources` | Получение информации о папке | `testGetFolderInfo()` |
+| **POST** | `/resources/publish` | Публикация папки (создание публичной ссылки) | `testPublishFolder()` |
+| **DELETE** | `/resources` | Безвозвратное удаление папки | `testDeleteFolder()` |
 
 Каждый тест создаёт временную папку с уникальным именем, выполняет действие и удаляет папку после проверки.
 
@@ -65,13 +58,15 @@ Yandex-disk-Integration-test/
 ├── pom.xml
 ├── README.md
 ├── images/
-│   ├── allure-overview.png
-│   └── token-idea-config.png
+│ ├── allure-overview.png
+│ └── token-idea-config.png
 └── src/
-    ├── main/java/ru/tests/yadisk/
-    │   └── YDClient.java
-    └── test/java/ru/tests/yadisk/
-        └── YDAPITest.java
+├── main/
+│ └── java/ru/tests/yadisk/
+│ └── YDClient.java
+└── test/
+└── java/ru/tests/yadisk/
+└── YDAPITest.java
 
 ---
 		
