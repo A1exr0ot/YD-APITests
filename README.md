@@ -45,8 +45,8 @@
 ## ⚙️ Установка и настройка
 
 1. Клонирование репозитория:
-  - bash git clone https://github.com/A1exr0ot/Yandex-Disk-Integration-Tests
-  - cd yandex-disk-api-tests
+   - bash git clone https://github.com/A1exr0ot/Yandex-Disk-Integration-Tests
+   - cd yandex-disk-api-tests
 
 2. Получение OAuth-токена Яндекс.Диска:
   - Перейдите на страницу разработчика OAuth.
