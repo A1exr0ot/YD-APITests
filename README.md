@@ -54,7 +54,7 @@ Maven – сборка и зависимости
 
 ## 📁 Структура проекта
 
-Структура проекта
+## Структура проекта
 
 Yandex-disk-Integration-test/
 ├── pom.xml
@@ -62,13 +62,14 @@ Yandex-disk-Integration-test/
 ├── images/
 │   ├── allure-overview.png
 │   └── token-idea-config.png
-└── src/
-    └── main/
-        └── java/
-            └── ru/
-                └── tests/
-                    └── yadisk/
-                        └── YDClient.java
+├── src/
+│   ├── main/
+│   │   └── java/ru/tests/yadisk/
+│   │       └── YDClient.java
+│   └── test/
+│       └── java/ru/tests/yadisk/
+│           └── YDAPITest.java
+
 
 ---
 		
