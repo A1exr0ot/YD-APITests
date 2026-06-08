@@ -72,7 +72,7 @@
 
 6. Запуск тестов:
    - Через Maven (терминал): mvn clean test
-   - Через IDEA: Нажмите зелёную кнопку рядом с классом YandexDiskApiTest или используйте Ctrl+Shift+F10.
+   - Через IDEA: Нажмите зелёную кнопку рядом с классом YDAPITest или используйте Ctrl+Shift+F10.
 
 7. Пример успешного вывода:
    - [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
